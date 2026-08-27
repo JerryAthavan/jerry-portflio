@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-bg: #282c34;
+  --color-surface: #21252b;
+  --color-surface-2: #2c313a;
+  --color-border: #3a3f4b;
+  --color-text: #abb2bf;
+  --color-text-dim: #828896;
+  --color-text-faint: #5c6370;
+  --color-blue: #61afef;
+  --color-gold: #e5c07b;
+  --color-green: #98c379;
+  --color-pink: #e06c75;
+  --color-border-soft: #333842;
+
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@keyframes blink {
+  50% {opacity: 0;}
+}
+
+.cursor{
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: currentColor;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(152, 195, 121, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(152, 195, 121, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(152, 195, 121, 0);
+  }
+}
+
+.pulse-dot {
+  animation: pulse-ring 2s infinite;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 90%);
+}
