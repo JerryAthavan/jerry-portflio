@@ -33,7 +33,10 @@ function Nav(){
     return(
         <nav className="sticky top-0 z-50 bg-surface border-b border-border-soft">
             <div className="flex justify-center items-center gap-6 px-6 py-4">
-                <span className="font-mono font-bold text-white">jerry<span className="text-green">.dev</span></span>
+                <button onClick={()=> window.scrollTo({top:0, behavior: 'smooth'})}>
+                    <span className="font-mono font-bold text-white">jerry<span className="text-green">.dev</span></span>
+                </button>
+                
                 <button className={`font-mono text-sm pb-1 border-b-2 ${
                     activeSection === 'about'
                     ? 'text-white border-blue':
