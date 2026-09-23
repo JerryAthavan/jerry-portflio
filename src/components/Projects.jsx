@@ -9,7 +9,7 @@ const projects = [
       'Deployed and maintained live on Vercel'
     ],
     tags: ['React', 'Tailwind CSS', 'Vercel'],
-    link: null
+    link: "https://jerry-portflio.vercel.app/"
   },
   {
     title: 'UfileFbar — FBAR Filing Platform',
