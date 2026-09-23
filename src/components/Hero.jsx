@@ -15,7 +15,7 @@ function Hero() {
                 clearInterval(nameinterval)
                 startRoleTyping()
             }
-        }, 60)
+        }, 30)
 
         function startRoleTyping(){
             let roleIndex = 0
@@ -26,7 +26,7 @@ function Hero() {
                     clearInterval(roleInterval)
                     startSummaryTyping()
                 }
-            }, 40)
+            }, 20)
         }
         function startSummaryTyping(){
             let desIndex = 0
@@ -36,7 +36,7 @@ function Hero() {
                 if(desIndex === fullSummary.length){
                     clearInterval(desinterval)
                 }
-            }, 30)
+            }, 10)
 
         }
         return()=> clearInterval(nameinterval)

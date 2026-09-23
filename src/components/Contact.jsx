@@ -20,7 +20,7 @@ function Contact(){
 
         emailjs.send(
             'service_eowqblx',
-            'template_gdphxb9',
+            'template_zc1g9uw',
             { name, email, message },
             'tA-pl39Dyi2Ob2q5A'
         )
