@@ -28,7 +28,7 @@ function About(){
                     </div>
                     <div className="flex flex-row justify-between px-4 py-3 border-b border-border">
                         <span className="text-text-faint text-xs">cgpa</span>
-                        <span className="text-text text-sm font-sans">8.25</span>
+                        <span className="text-text text-sm font-sans">8.13</span>
                     </div>
                     <div className="flex flex-row justify-between px-4 py-3 border-b border-border">
                         <span className="text-text-faint text-xs">grad</span>
